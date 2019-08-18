@@ -11,7 +11,7 @@ function sendRandomSuhu () {
   // generate random number beetwen 0 and 99
   const randomNumber = Math.floor(Math.random() * 100)
   const topic = 'jawabarat.bandung.suhu'
-  nats.publish('jawabarat.bandung.suhu', randomNumber.toString())
+  nats.publish(topic, randomNumber.toString())
   console.log(`[PUBLISHER] Publish ${randomNumber} to ${topic}`)
 }
 
