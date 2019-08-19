@@ -22,4 +22,4 @@ function onConnectHandler () {
 nats.on('connect', onConnectHandler)
 
 // publish random number every 5 second
-setInterval(sendRandomSuhu, 5000)
+setInterval(sendRandomSuhu, interval)
